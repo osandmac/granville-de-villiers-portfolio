@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granville De Villiers | CEO & Founder of Microstone Mining | Zimbabwe Mining Leader</title>
+    <meta name="description" content="Granville FJ De Villiers - CEO and Founder of Microstone Mining, Zimbabwe's leading gold, lithium & rare earth mining company. Advocate, entrepreneur, and philanthropist.">
+    <meta name="keywords" content="Granville De Villiers, Microstone Mining, Zimbabwe mining, gold mining Zimbabwe, lithium mining Africa, rare earth minerals, African mining CEO, Granville De Villiers Foundation">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Granville De Villiers | CEO of Microstone Mining Zimbabwe">
+    <meta property="og:description" content="From Hanover Park to leading Zimbabwe's premier mining operation. CEO, Advocate, and Philanthropist.">
+    <meta property="og:type" content="profile">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --gold: #C9A962;
+            --gold-light: #E5D4A1;
+            --charcoal: #1A1A1A;
+            --charcoal-light: #2D2D2D;
+            --cream: #FAF8F3;
+            --cream-dark: #F0EDE5;
+            --text-dark: #1A1A1A;
+            --text-muted: #6B6B6B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--cream);
+            color: var(--text-dark);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse at 20% 80%, rgba(201, 169, 98, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(201, 169, 98, 0.05) 0%, transparent 40%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem 6rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 6vw, 5rem);
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 span {
+            display: block;
+            font-style: italic;
+            font-weight: 400;
+            color: var(--gold);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 480px;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(201, 169, 98, 0.3);
+        }
+
+        .stat {
+            text-align: left;
+        }
+
+        .stat-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--charcoal);
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .hero-image {
+            background: var(--charcoal);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: 
+                linear-gradient(135deg, rgba(201, 169, 98, 0.15) 0%, transparent 50%),
+                url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.4;
+        }
+
+        .image-placeholder {
+            width: 320px;
+            height: 420px;
+            border: 2px solid var(--gold);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-light);
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+
+        .image-placeholder::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: 20px;
+            bottom: 20px;
+            border: 1px solid rgba(201, 169, 98, 0.3);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 6rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 4rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: baseline;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .section-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .section-title {
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        /* About Section */
+        .about {
+            background: var(--charcoal);
+            color: var(--cream);
+        }
+
+        .about h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--cream);
+            margin-bottom: 2rem;
+            max-width: 800px;
+        }
+
+        .about h2 em {
+            color: var(--gold);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: rgba(250, 248, 243, 0.85);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .about-sidebar {
+            padding-left: 2rem;
+            border-left: 1px solid rgba(201, 169, 98, 0.3);
+        }
+
+        .credential {
+            margin-bottom: 2rem;
+        }
+
+        .credential-label {
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .credential-value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            color: var(--cream);
+        }
+
+        /* Journey Section */
+        .journey {
+            background: var(--cream);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .journey::before {
+            content: '';
+            position: absolute;
+            right: -200px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(201, 169, 98, 0.08) 0%, transparent 70%);
+        }
+
+        .journey h2 {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            color: var(--charcoal);
+            margin-bottom: 3rem;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: linear-gradient(to bottom, var(--gold), rgba(201, 169, 98, 0.2));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(26, 26, 26, 0.08);
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -3rem;
+            top: 0.5rem;
+            width: 8px;
+            height: 8px;
+            background: var(--gold);
+            border-radius: 50%;
+            transform: translateX(-3.5px);
+        }
+
+        .timeline-year {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            color: var(--gold);
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            margin-bottom: 0.75rem;
+        }
+
+        .timeline-text {
+            color: var(--text-muted);
+            font-size: 1rem;
+            max-width: 600px;
+        }
+
+        /* Business Section */
+        .business {
+            background: linear-gradient(135deg, var(--charcoal) 0%, var(--charcoal-light) 100%);
+            color: var(--cream);
+        }
+
+        .business h2 {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            color: var(--cream);
+            margin-bottom: 1rem;
+        }
+
+        .business-intro {
+            font-size: 1.1rem;
+            color: rgba(250, 248, 243, 0.7);
+            max-width: 700px;
+            margin-bottom: 4rem;
+        }
+
+        .countries-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1.5rem;
+        }
+
+        .country {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: rgba(250, 248, 243, 0.03);
+            border: 1px solid rgba(201, 169, 98, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .country:hover {
+            background: rgba(201, 169, 98, 0.1);
+            border-color: var(--gold);
+            transform: translateY(-4px);
+        }
+
+        .country-flag {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .country-name {
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--cream);
+        }
+
+        /* Foundation Section */
+        .foundation {
+            background: var(--cream-dark);
+            position: relative;
+        }
+
+        .foundation-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .foundation h2 {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+        }
+
+        .foundation h2 em {
+            color: var(--gold);
+        }
+
+        .foundation-text {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.9;
+        }
+
+        .foundation-visual {
+            background: var(--charcoal);
+            padding: 4rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .foundation-visual::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 1px solid var(--gold);
+            z-index: -1;
+        }
+
+        .foundation-quote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.75rem;
+            font-style: italic;
+            color: var(--cream);
+            line-height: 1.6;
+        }
+
+        .foundation-quote cite {
+            display: block;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            font-style: normal;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--charcoal);
+            color: var(--cream);
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .contact h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            margin-bottom: 1rem;
+        }
+
+        .contact-text {
+            color: rgba(250, 248, 243, 0.7);
+            margin-bottom: 2.5rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .contact-link {
+            padding: 1rem 2.5rem;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+            background: var(--gold);
+            color: var(--charcoal);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--charcoal);
+            border-top: 1px solid rgba(201, 169, 98, 0.2);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.75rem;
+            color: rgba(250, 248, 243, 0.4);
+            letter-spacing: 0.1em;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-content > * {
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .hero-label { animation-delay: 0.1s; }
+        .hero h1 { animation-delay: 0.2s; }
+        .hero-subtitle { animation-delay: 0.3s; }
+        .hero-stats { animation-delay: 0.4s; }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-image {
+                display: none;
+            }
+            
+            .hero-content {
+                padding: 4rem 2rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-sidebar {
+                padding-left: 0;
+                padding-top: 2rem;
+                border-left: none;
+                border-top: 1px solid rgba(201, 169, 98, 0.3);
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+            }
+            
+            .countries-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .foundation-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 0 2rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .countries-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero" role="banner">
+        <div class="hero-content">
+            <p class="hero-label">Chief Executive Officer & Founder</p>
+            <h1>
+                Granville
+                <span>De Villiers</span>
+            </h1>
+            <p class="hero-subtitle">
+                Building Zimbabwe's premier mining enterprise while empowering communities across Africa. Advocate, entrepreneur, and philanthropist.
+            </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">300+</div>
+                    <div class="stat-label">Employees</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Mineral Licenses</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+            <div class="image-placeholder">
+                Professional Portrait
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <span class="section-title">About</span>
+            </div>
+            <h2>Leading <em>Microstone Mining</em> — Zimbabwe's foremost gold, lithium, and rare earth mining company</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Granville FJ De Villiers is the Chief Executive Officer and Founder of <strong>Microstone Mining (Pty) Ltd</strong>, a Zimbabwean-registered and licensed mining company with concessions to extract Gold, Tantalite, Lithium, and other rare earth minerals critical to the global energy transition.
+                    </p>
+                    <p>
+                        Under De Villiers' leadership, Microstone Mining has grown from a single mining concession into one of Zimbabwe's leading mining operations, employing nearly 300 skilled workers across its operations. The company represents a significant contribution to Zimbabwe's position as a key player in African mineral resources.
+                    </p>
+                    <p>
+                        Beyond Zimbabwe, De Villiers maintains strategic business interests spanning six nations: Sierra Leone, Tanzania, the Democratic Republic of Congo, Namibia, Belgium, and South Africa — positioning him as a significant figure in African resource development.
+                    </p>
+                </div>
+                <aside class="about-sidebar">
+                    <div class="credential">
+                        <div class="credential-label">Education</div>
+                        <div class="credential-value">B. Iuris, LLB</div>
+                    </div>
+                    <div class="credential">
+                        <div class="credential-label">Advanced Studies</div>
+                        <div class="credential-value">MBA (Finance)</div>
+                    </div>
+                    <div class="credential">
+                        <div class="credential-label">Specialization</div>
+                        <div class="credential-value">Diploma in Forensics</div>
+                    </div>
+                    <div class="credential">
+                        <div class="credential-label">Legal Standing</div>
+                        <div class="credential-value">Advocate of the High Court</div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="journey" id="journey">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <span class="section-title">Journey</span>
+            </div>
+            <h2>From Hanover Park to the High Court — and Beyond</h2>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-year">Early Years</div>
+                    <h3 class="timeline-title">Against All Odds</h3>
+                    <p class="timeline-text">
+                        Growing up in Hanover Park on the Cape Flats — one of South Africa's most challenging townships — De Villiers faced constant pressure to join gangs for protection. Instead, he chose education and excellence, becoming a standout athlete with provincial colours in soccer, cricket, and rugby.
+                    </p>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-year">1987</div>
+                    <h3 class="timeline-title">Crystal High School Headboy</h3>
+                    <p class="timeline-text">
+                        Elected as Headboy of Crystal High School in Hanover Park, De Villiers was publicly recognized for his exceptional leadership in both academics and athletics — setting the trajectory for a lifetime of leadership.
+                    </p>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-year">Legal Career</div>
+                    <h3 class="timeline-title">First Advocate from Hanover Park</h3>
+                    <p class="timeline-text">
+                        Despite significant financial hardship, De Villiers completed his B. Iuris and LLB degrees in minimum time, earning admission as an Advocate of the High Court — becoming the first person from Hanover Park to achieve this distinction.
+                    </p>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-year">Mining Career</div>
+                    <h3 class="timeline-title">African Mining Experience</h3>
+                    <p class="timeline-text">
+                        Strategic roles at mines across West and East Africa provided De Villiers with comprehensive industry expertise, preparing him for his transition to Zimbabwe's mineral-rich opportunities.
+                    </p>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-year">Present Day</div>
+                    <h3 class="timeline-title">Microstone Mining</h3>
+                    <p class="timeline-text">
+                        Founded and built Microstone Mining into a leading Zimbabwean mining operation with licenses for gold, tantalite, lithium, and rare earth minerals — employing nearly 300 people and contributing to Africa's growing role in global mineral supply chains.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Interests Section -->
+    <section class="business" id="business">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <span class="section-title">Global Presence</span>
+            </div>
+            <h2>Pan-African Business Interests</h2>
+            <p class="business-intro">
+                Beyond Microstone Mining, De Villiers maintains strategic investments and operations across the African continent and Europe, contributing to sustainable resource development.
+            </p>
+            <div class="countries-grid">
+                <div class="country">
+                    <div class="country-flag">🇿🇼</div>
+                    <div class="country-name">Zimbabwe</div>
+                </div>
+                <div class="country">
+                    <div class="country-flag">🇸🇱</div>
+                    <div class="country-name">Sierra Leone</div>
+                </div>
+                <div class="country">
+                    <div class="country-flag">🇹🇿</div>
+                    <div class="country-name">Tanzania</div>
+                </div>
+                <div class="country">
+                    <div class="country-flag">🇨🇩</div>
+                    <div class="country-name">DR Congo</div>
+                </div>
+                <div class="country">
+                    <div class="country-flag">🇳🇦</div>
+                    <div class="country-name">Namibia</div>
+                </div>
+                <div class="country">
+                    <div class="country-flag">🇿🇦</div>
+                    <div class="country-name">South Africa</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foundation Section -->
+    <section class="foundation" id="foundation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <span class="section-title">Philanthropy</span>
+            </div>
+            <div class="foundation-content">
+                <div>
+                    <h2>The Granville <em>De Villiers</em> Foundation</h2>
+                    <p class="foundation-text">
+                        In 2019, never forgetting his roots in Hanover Park, De Villiers established the <strong>Granville De Villiers Foundation</strong> — a non-profit organisation dedicated to uplifting and empowering previously disadvantaged communities across Southern Africa.
+                        <br><br>
+                        Microstone Mining serves as the primary financial vehicle for the Foundation's initiatives, channeling mining revenues into sustainable community development, educational opportunities, and economic empowerment programs.
+                    </p>
+                </div>
+                <div class="foundation-visual">
+                    <blockquote class="foundation-quote">
+                        "Success means nothing if we don't reach back and lift others from where we came."
+                        <cite>Granville De Villiers</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Connect with Granville De Villiers</h2>
+            <p class="contact-text">For business inquiries, media requests, or foundation partnerships</p>
+            <div class="contact-links">
+                <a href="#" class="contact-link">Microstone Mining</a>
+                <a href="#" class="contact-link">Foundation</a>
+                <a href="#" class="contact-link">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Granville De Villiers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Schema.org Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Granville FJ De Villiers",
+        "jobTitle": "Chief Executive Officer and Founder",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Microstone Mining (Pty) Ltd",
+            "description": "Zimbabwean mining company with licenses for Gold, Tantalite, Lithium and Rare Earth minerals"
+        },
+        "alumniOf": [
+            {
+                "@type": "EducationalOrganization",
+                "name": "Crystal High School"
+            }
+        ],
+        "hasCredential": [
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "degree",
+                "name": "B. Iuris"
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "degree",
+                "name": "LLB"
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "degree",
+                "name": "MBA (Finance)"
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "diploma",
+                "name": "Diploma in Forensics"
+            }
+        ],
+        "award": "First Advocate of the High Court from Hanover Park",
+        "nationality": "South African",
+        "knowsAbout": ["Mining", "Gold Mining", "Lithium Mining", "Rare Earth Minerals", "Law", "Finance", "Forensics"],
+        "affiliation": {
+            "@type": "NGO",
+            "name": "Granville De Villiers Foundation",
+            "foundingDate": "2019",
+            "description": "Non-profit organisation seeking to uplift and empower previously disadvantaged communities"
+        }
+    }
+    </script>
+
+</body>
+</html>
