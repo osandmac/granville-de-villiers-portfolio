@@ -1,0 +1,14 @@
+# Documentation
+CLAUDE.md
+SEO-GUIDE.md
+*.pages
+
+# Extra images (not used by site)
+GDV 1.png
+GDV 2.png
+GDV Full logo.png
+Granville De Villiers Favicon.png
+WhatsApp Image*.jpeg
+
+# OS files
+.DS_Store
