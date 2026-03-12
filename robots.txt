@@ -1,0 +1,55 @@
+# ===========================================
+# AI Search Engine Bots (GEO - Generative Engine Optimization)
+# Explicitly allow AI crawlers for citation and indexing
+# ===========================================
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI (Gemini / AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Microsoft Copilot / Bing AI
+User-agent: Bingbot
+Allow: /
+
+# Apple Intelligence / Siri
+User-agent: Applebot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# ===========================================
+# Traditional Search Engines
+# ===========================================
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://granvilledevilliers.com/sitemap.xml
