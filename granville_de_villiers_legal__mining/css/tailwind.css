@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #2C3E50; /* slate-800 */
+  --color-primary-50: #F8FAFC; /* slate-50 */
+  --color-primary-100: #F1F5F9; /* slate-100 */
+  --color-primary-200: #E2E8F0; /* slate-200 */
+  --color-primary-300: #CBD5E1; /* slate-300 */
+  --color-primary-400: #94A3B8; /* slate-400 */
+  --color-primary-500: #64748B; /* slate-500 */
+  --color-primary-600: #475569; /* slate-600 */
+  --color-primary-700: #334155; /* slate-700 */
+  --color-primary-800: #2C3E50; /* slate-800 */
+  --color-primary-900: #0F172A; /* slate-900 */
+
+  /* Secondary Colors */
+  --color-secondary: #34495E; /* slate-700 */
+  --color-secondary-50: #F8FAFC; /* slate-50 */
+  --color-secondary-100: #F1F5F9; /* slate-100 */
+  --color-secondary-200: #E2E8F0; /* slate-200 */
+  --color-secondary-300: #CBD5E1; /* slate-300 */
+  --color-secondary-400: #94A3B8; /* slate-400 */
+  --color-secondary-500: #64748B; /* slate-500 */
+  --color-secondary-600: #475569; /* slate-600 */
+  --color-secondary-700: #34495E; /* slate-700 */
+  --color-secondary-800: #1E293B; /* slate-800 */
+  --color-secondary-900: #0F172A; /* slate-900 */
+
+  /* Accent Colors */
+  --color-accent: #D4AF37; /* yellow-600 */
+  --color-accent-50: #FEFCE8; /* yellow-50 */
+  --color-accent-100: #FEF3C7; /* yellow-100 */
+  --color-accent-200: #FDE68A; /* yellow-200 */
+  --color-accent-300: #FCD34D; /* yellow-300 */
+  --color-accent-400: #FBBF24; /* yellow-400 */
+  --color-accent-500: #F59E0B; /* yellow-500 */
+  --color-accent-600: #D4AF37; /* yellow-600 */
+  --color-accent-700: #A16207; /* yellow-700 */
+  --color-accent-800: #92400E; /* yellow-800 */
+  --color-accent-900: #78350F; /* yellow-900 */
+
+  /* Background Colors */
+  --color-background: #FAFAFA; /* gray-50 */
+  --color-surface: #F8F9FA; /* gray-100 */
+
+  /* Text Colors */
+  --color-text-primary: #2C3E50; /* slate-800 */
+  --color-text-secondary: #5D6D7E; /* slate-600 */
+
+  /* Status Colors */
+  --color-success: #27AE60; /* green-600 */
+  --color-success-50: #F0FDF4; /* green-50 */
+  --color-success-100: #DCFCE7; /* green-100 */
+  --color-success-200: #BBF7D0; /* green-200 */
+  --color-success-300: #86EFAC; /* green-300 */
+  --color-success-400: #4ADE80; /* green-400 */
+  --color-success-500: #22C55E; /* green-500 */
+  --color-success-600: #27AE60; /* green-600 */
+  --color-success-700: #15803D; /* green-700 */
+  --color-success-800: #166534; /* green-800 */
+  --color-success-900: #14532D; /* green-900 */
+
+  --color-warning: #F39C12; /* orange-500 */
+  --color-warning-50: #FFF7ED; /* orange-50 */
+  --color-warning-100: #FFEDD5; /* orange-100 */
+  --color-warning-200: #FED7AA; /* orange-200 */
+  --color-warning-300: #FDBA74; /* orange-300 */
+  --color-warning-400: #FB923C; /* orange-400 */
+  --color-warning-500: #F39C12; /* orange-500 */
+  --color-warning-600: #EA580C; /* orange-600 */
+  --color-warning-700: #C2410C; /* orange-700 */
+  --color-warning-800: #9A3412; /* orange-800 */
+  --color-warning-900: #7C2D12; /* orange-900 */
+
+  --color-error: #E74C3C; /* red-500 */
+  --color-error-50: #FEF2F2; /* red-50 */
+  --color-error-100: #FEE2E2; /* red-100 */
+  --color-error-200: #FECACA; /* red-200 */
+  --color-error-300: #FCA5A5; /* red-300 */
+  --color-error-400: #F87171; /* red-400 */
+  --color-error-500: #E74C3C; /* red-500 */
+  --color-error-600: #DC2626; /* red-600 */
+  --color-error-700: #B91C1C; /* red-700 */
+  --color-error-800: #991B1B; /* red-800 */
+  --color-error-900: #7F1D1D; /* red-900 */
+
+  /* Border Colors */
+  --color-border: #E5E7EB; /* gray-200 */
+  --color-border-accent: #D4AF37; /* yellow-600 */
+
+  /* Shadow Variables */
+  --shadow-subtle: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-elevated: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+@layer base {
+  body {
+    font-family: 'Crimson Text', serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-text-primary);
+  }
+
+  .font-headline {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Crimson Text', serif;
+  }
+
+  .font-cta {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+
+  .font-accent {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-cta transition-all duration-300 ease-in-out hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-lg font-cta transition-all duration-300 ease-in-out hover:bg-secondary-700 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-primary px-6 py-3 rounded-lg font-cta transition-all duration-300 ease-in-out hover:bg-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2;
+  }
+
+  .card-elevated {
+    @apply bg-white rounded-lg shadow-elevated p-6 transition-all duration-300 ease-in-out;
+  }
+
+  .card-subtle {
+    @apply bg-surface rounded-lg shadow-subtle p-6 transition-all duration-300 ease-in-out;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ease-in-out;
+  }
+
+  .text-gradient-accent {
+    @apply bg-gradient-to-r from-accent-600 to-accent-400 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: all 300ms ease-in-out;
+  }
+
+  .shadow-custom-subtle {
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .shadow-custom-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+}
